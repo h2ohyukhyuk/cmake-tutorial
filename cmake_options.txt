@@ -1,0 +1,4 @@
+https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/index.html
+
+cmake -S "<Path/To/CMakeLists.txt>" -B "<Path/To/Build>" -G "MinGW Makefiles"
+cmake -DUSE_MYMATH=OFF

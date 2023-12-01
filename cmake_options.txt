@@ -1,4 +1,9 @@
 https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/index.html
+https://gist.github.com/graykode/5972396e8c00ff7b704938643f95fd72
+
 
 cmake -S "<Path/To/CMakeLists.txt>" -B "<Path/To/Build>" -G "MinGW Makefiles"
 cmake -DUSE_MYMATH=OFF
+cmake -DCMAKE_INSTALL_PREFIX="<Path/To/Prefix>"
+make install DESTDIR="<install-dir1/>"
+결과 파일들은 <Path/To/Prefix/install-dir1/install-dir2> 경로에 include, lib, bin, share 폴더에 저장된다.

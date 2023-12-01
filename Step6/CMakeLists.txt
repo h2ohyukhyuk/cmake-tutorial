@@ -27,7 +27,7 @@ target_include_directories(Tutorial PUBLIC
 install(TARGETS Tutorial DESTINATION bin)
 install(FILES "TutorialConfig.h" DESTINATION include)
 
-enable_testing()
+include(CTest)
 
 add_test(NAME Runs COMMAND Tutorial 25)
 

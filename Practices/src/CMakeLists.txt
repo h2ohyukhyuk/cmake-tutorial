@@ -1,0 +1,3 @@
+message(STATUS "src dir")
+message(STATUS ${CMAKE_SOURCE_DIR})
+message(STATUS ${CMAKE_CURRENT_SOURCE_DIR})

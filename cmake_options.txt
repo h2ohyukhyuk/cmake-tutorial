@@ -1,4 +1,5 @@
 https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/index.html
+# CMake 할때 쪼오오금 도움이 되는 문서
 https://gist.github.com/graykode/5972396e8c00ff7b704938643f95fd72
 
 
@@ -7,3 +8,8 @@ cmake -DUSE_MYMATH=OFF
 cmake -DCMAKE_INSTALL_PREFIX="<Path/To/Prefix>"
 make install DESTDIR="<install-dir1/>"
 결과 파일들은 <Path/To/Prefix/install-dir1/install-dir2> 경로에 include, lib, bin, share 폴더에 저장된다.
+-DCMAKE_BUILD_TYPE=Debug/Release
+-DCMAKE_SHARED_LIBS=false
+
+
+"-DCMAKE_TOOLCHAIN_FILE=C:/library/vcpkg/scripts/buildsystems/vcpkg.cmake"
